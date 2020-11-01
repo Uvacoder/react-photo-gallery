@@ -13,6 +13,13 @@
   }
 }
 
+.edit-new-customer-form-modal .ant-modal-body {
+  max-height: 650px;
+  min-height: 650px;
+  overflow-y: auto;
+  overflow-y: overlay;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
