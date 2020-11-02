@@ -31,6 +31,7 @@ class ImageSlider extends React.Component {
       (objectData) => objectData.id === e
     )[0];
     this.setState({ selectedDataObject: data });
+    console.log("selected Data: ", data);
     this.props.onChangeImage(data);
   }
 
@@ -43,11 +44,11 @@ class ImageSlider extends React.Component {
           onChange={(e) => this.imageChanged(e)}
           useKeyboardArrows={true}
           //    thumbWidth={100}
-          dynamicHeight={true}
+          // dynamicHeight={true}
           //    selectedItem={e => console.log('selected item rendered')}
         >
           {this.state.imagesData.map((dataObject, index) => {
-            if (this.props.selectedImageIndex != 0 && count === 0) {
+            if (this.props.selectedImageIndex && count === 0) {
               index = this.props.selectedImageIndex;
               count++;
             }
@@ -61,8 +62,8 @@ class ImageSlider extends React.Component {
             //   console.log("after index value: ", index);
             // }
             return (
-              <div key={index}>
-                  <img src={this.state.imagesData[index].src} />
+              <div className="aspect-ratio-box" key={index}>
+                <img src={this.state.imagesData[index].src} />
               </div>
             );
           })}

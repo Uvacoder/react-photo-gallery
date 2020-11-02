@@ -9,8 +9,8 @@ export const photos = [
       customerName: "usman",
       uplaodedDate: "7/5/2020. 7:20 P.M.",
     },
-    notes: "",
-    tags: ["ali", "hamza", "tufail"]
+    notes: "Hi Pakistan",
+    tags: ["ali", "hamza", "tufail"],
   },
   {
     id: 1,
@@ -21,8 +21,8 @@ export const photos = [
       customerName: "zain",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
-    notes: "",
-    tags: ["usman", "adeel", "husnain"]
+    notes: "Hi, Lahore",
+    tags: ["usman", "adeel", "husnain"],
   },
   {
     id: 2,
@@ -33,7 +33,8 @@ export const photos = [
       customerName: "hamid",
       uplaodedDate: "21/5/2020. 7:20 P.M.",
     },
-    notes: "",
+    notes: "Hi london",
+    tags: ["ghani", "gujjar", "NUCES"],
   },
   {
     id: 3,
