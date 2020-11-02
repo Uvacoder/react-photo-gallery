@@ -18,6 +18,14 @@ class ImageSlider extends React.Component {
     );
   }
 
+  // componentWillReceiveProps(newProps) {
+  //   //  console.log('new Props', newProps);
+  //   const { imagesData } = this.state;
+  //   const { selectedImageIndex } = newProps;
+  //   // const [imagesData[0], imagesData[newProps.selectedImageIndex] ] = [imagesData[newProps.selectedImageIndex], imagesData[0]];
+  //   const imagesDatas = imagesData.map((dataItem) => dataItem.key === selectedImageIndex ? )
+  // }
+
   imageChanged(e) {
     const data = this.state.imagesData.filter(
       (objectData) => objectData.id === e
@@ -39,7 +47,7 @@ class ImageSlider extends React.Component {
           //    selectedItem={e => console.log('selected item rendered')}
         >
           {this.state.imagesData.map((dataObject, index) => {
-            if (this.props.selectedImageIndex !== 0 && count === 0) {
+            if (this.props.selectedImageIndex != 0 && count === 0) {
               index = this.props.selectedImageIndex;
               count++;
             }
@@ -54,7 +62,7 @@ class ImageSlider extends React.Component {
             // }
             return (
               <div key={index}>
-                <img src={this.state.imagesData[index].src} />
+                  <img src={this.state.imagesData[index].src} />
               </div>
             );
           })}

@@ -10,6 +10,7 @@ export const photos = [
       uplaodedDate: "7/5/2020. 7:20 P.M.",
     },
     notes: "",
+    tags: ["ali", "hamza", "tufail"]
   },
   {
     id: 1,
@@ -21,6 +22,7 @@ export const photos = [
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
     notes: "",
+    tags: ["usman", "adeel", "husnain"]
   },
   {
     id: 2,

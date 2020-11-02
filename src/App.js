@@ -28,13 +28,14 @@ const App = () => {
       <Gallery photos={photos} onClick={openLightbox} />
       {viewerIsOpen ? (
         <Modal
-          title="Basic Modal"
+          title="Customer Images"
           visible={viewerIsOpen}
           onOk={closeLightbox}
-          style={{ top: "0px", paddingBottom: "0px" }}
+          style={{ top: "0px", paddingBottom: "0px", display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}
           onCancel={closeLightbox}
           wrapClassName="edit-new-customer-form-modal"
-          width="90%"
+          footer={null}
+          width="70%"
           zIndex={2001}
         >
           <ImageDetails currentImage={currentImage} />
