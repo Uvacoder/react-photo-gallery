@@ -6,8 +6,9 @@ export const photos = [
     height: 3,
     thumbnail: "A URL to load a low quality image from",
     metaData: {
+      origin: "customer web portal",
       customerName: "usman",
-      uplaodedDate: "7/5/2020. 7:20 P.M.",
+      uplaodedDate: "7/5/2020, 7:20 P.M.",
     },
     notes: "Hi Pakistan",
     tags: ["ali", "hamza", "tufail"],
@@ -18,6 +19,7 @@ export const photos = [
     width: 1,
     height: 1,
     metaData: {
+      origin: "Ignition",
       customerName: "zain",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
@@ -30,6 +32,7 @@ export const photos = [
     width: 3,
     height: 4,
     metaData: {
+      origin: "Lahore",
       customerName: "hamid",
       uplaodedDate: "21/5/2020. 7:20 P.M.",
     },
@@ -42,6 +45,7 @@ export const photos = [
     width: 3,
     height: 4,
     metaData: {
+      origin: "Trump",
       customerName: "mustafa",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
@@ -54,6 +58,7 @@ export const photos = [
     width: 3,
     height: 4,
     metaData: {
+      origin: "Obama",
       customerName: "hassan",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
@@ -66,11 +71,12 @@ export const photos = [
     width: 4,
     height: 3,
     metaData: {
+      origin: "SRK",
       customerName: "gujjar",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
     notes: "boris",
-    tags: ["cricket", "Hockey"]
+    tags: ["cricket", "Hockey"],
   },
   {
     id: 6,
@@ -78,6 +84,7 @@ export const photos = [
     width: 3,
     height: 4,
     metaData: {
+      origin: "lol",
       customerName: "balaj",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
@@ -89,6 +96,7 @@ export const photos = [
     width: 4,
     height: 3,
     metaData: {
+      origin: "origin",
       customerName: "mubeen",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
@@ -100,6 +108,7 @@ export const photos = [
     width: 4,
     height: 3,
     metaData: {
+      origin: "boris",
       customerName: "junaid",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },

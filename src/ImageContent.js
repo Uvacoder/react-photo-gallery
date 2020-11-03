@@ -49,8 +49,14 @@ export default function ImageContent({ data, onCancel }) {
   return (
     <React.Fragment>
       <span>
-        <Row>
-          <Col span={9}>
+        <Row
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <Col>
             <Button onClick={pinnedImage}>
               <span>
                 <PushpinOutlined />
@@ -58,7 +64,7 @@ export default function ImageContent({ data, onCancel }) {
               &nbsp;&nbsp;&nbsp;&nbsp;Pin&nbsp;&nbsp;&nbsp;&nbsp;
             </Button>
           </Col>
-          <Col span={7} offset={5}>
+          <Col>
             <Button onClick={starImage}>
               <span>
                 <StarOutlined />
@@ -73,14 +79,14 @@ export default function ImageContent({ data, onCancel }) {
         <Row>
           <Col span={24}>
             <span style={{ color: "#8a8a8a" }}>Origin</span> <br />
-            {data.metaData.customerName}
+            {data.metaData.origin}
           </Col>
         </Row>
         <br />
         <Row>
           <Col span={24}>
             <span style={{ color: "#8a8a8a" }}>Uploaded By</span> <br />
-            {data.metaData.uplaodedDate}
+            {data.metaData.customerName} on {data.metaData.uplaodedDate}
           </Col>
         </Row>
         <hr />
@@ -132,11 +138,18 @@ export default function ImageContent({ data, onCancel }) {
           </Col>
         </Row>
         <br />
-        <Row>
-          <Col span={5} offset={10}>
+        <br />
+        <Row
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "flex-end",
+          }}
+        >
+          <Col>
             <Button onClick={onCancel}>Cancel</Button>
           </Col>
-          <Col span={5} offset={4}>
+          <Col offset={1}>
             <Button type="primary" onClick={imageMetaData}>
               Save
             </Button>
