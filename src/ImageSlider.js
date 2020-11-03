@@ -2,6 +2,9 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { photos } from "./photos";
 
+import "./App.css";
+
+let test;
 class ImageSlider extends React.Component {
   constructor(props) {
     super(props);
@@ -27,6 +30,11 @@ class ImageSlider extends React.Component {
   // }
 
   imageChanged(e) {
+    console.log("prop data: ", this.props.selectedImageIndex);
+    // console.log('new index: ', e);
+    if(this.props.selectedImageIndex === e) {
+      e = 0;
+    }else if(e === test) e = this.props.selectedImageIndex;
     const data = this.state.imagesData.filter(
       (objectData) => objectData.id === e
     )[0];
@@ -37,6 +45,7 @@ class ImageSlider extends React.Component {
 
   render() {
     let count = 0;
+    let check = 0;
     return (
       <div className="carousel-container">
         <Carousel
@@ -45,12 +54,23 @@ class ImageSlider extends React.Component {
           useKeyboardArrows={true}
           //    thumbWidth={100}
           // dynamicHeight={true}
-          //    selectedItem={e => console.log('selected item rendered')}
+          // renderItem={() => console.log("pakistan")}
+          // selectedItem={e => console.log('selected item rendered', e)}
         >
           {this.state.imagesData.map((dataObject, index) => {
             if (this.props.selectedImageIndex && count === 0) {
+              check = index;
+              test = check;
               index = this.props.selectedImageIndex;
               count++;
+            }
+            else if(index === this.props.selectedImageIndex) {
+              //  console.log('inside index', index);
+               index = check;
+              //  const imagesData = this.state.imagesData.map((item, i) => {
+              //           return i === index ? 0 : null
+              //  });
+              //  this.setState({ imagesData })
             }
             // if (this.props.selectedImageIndex === index) {
             //   console.log("index value: ", index);
@@ -61,8 +81,9 @@ class ImageSlider extends React.Component {
             //   index = this.props.selectedImageIndex;
             //   console.log("after index value: ", index);
             // }
+            // console.log('item index: ', index);
             return (
-              <div className="aspect-ratio-box" key={index}>
+              <div key={index}>
                 <img src={this.state.imagesData[index].src} />
               </div>
             );

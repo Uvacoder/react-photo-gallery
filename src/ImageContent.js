@@ -5,7 +5,7 @@ import { PushpinOutlined, StarOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
 const { Option } = Select;
 
-export default function ImageContent({ data }) {
+export default function ImageContent({ data, onCancel }) {
   const [tags, setTags] = React.useState([]);
   const [notes, setNotes] = React.useState("");
   const [isPinned, setIsPinned] = React.useState(false);
@@ -134,7 +134,7 @@ export default function ImageContent({ data }) {
         <br />
         <Row>
           <Col span={5} offset={10}>
-            <Button>Cancel</Button>
+            <Button onClick={onCancel}>Cancel</Button>
           </Col>
           <Col span={5} offset={4}>
             <Button type="primary" onClick={imageMetaData}>

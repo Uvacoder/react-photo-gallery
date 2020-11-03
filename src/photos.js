@@ -45,7 +45,8 @@ export const photos = [
       customerName: "mustafa",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
-    notes: "",
+    notes: "Hi Islamabad",
+    tags: ["Usman", "Ahmed", "Faizan"],
   },
   {
     id: 4,
@@ -56,7 +57,8 @@ export const photos = [
       customerName: "hassan",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
-    notes: "",
+    notes: "Hi KPK",
+    tags: ["Coke Studio", "Azadi"],
   },
   {
     id: 5,
@@ -67,7 +69,8 @@ export const photos = [
       customerName: "gujjar",
       uplaodedDate: "10/5/2020. 7:20 P.M.",
     },
-    notes: "",
+    notes: "boris",
+    tags: ["cricket", "Hockey"]
   },
   {
     id: 6,

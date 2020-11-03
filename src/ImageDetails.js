@@ -36,7 +36,7 @@ class ImageDetails extends React.Component {
             </Col>
             <Col offset={2} span={5}>
               {selectedObject && selectedObject != null && (
-                <ImageContent data={selectedObject} />
+                <ImageContent onCancel={this.props.onCancel} data={selectedObject} />
               )}
             </Col>
           </Row>

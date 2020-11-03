@@ -22,6 +22,7 @@ const App = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+
   console.log("current Image: ", currentImage);
   return (
     <div>
@@ -38,7 +39,7 @@ const App = () => {
           width="70%"
           zIndex={2001}
         >
-          <ImageDetails currentImage={currentImage} />
+          <ImageDetails onCancel={closeLightbox} currentImage={currentImage} />
         </Modal>
       ) : null}
     </div>
