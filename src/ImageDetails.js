@@ -26,7 +26,7 @@ class ImageDetails extends React.Component {
       <React.Fragment>
         <span className="customer-image-details">
           <Row>
-            <Col span={16}>
+            <Col span={18}>
               <ImageSlider
                 selectedImageIndex={this.props.currentImage}
                 imagesData={this.state.imagesData}
@@ -34,7 +34,7 @@ class ImageDetails extends React.Component {
                 data={selectedObject}
               />
             </Col>
-            <Col offset={1} span={7}>
+            <Col offset={1} span={5}>
               {selectedObject && selectedObject != null && (
                 <ImageContent
                   onCancel={this.props.onCancel}

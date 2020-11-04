@@ -37,7 +37,7 @@ const App = () => {
           wrapClassName="edit-new-customer-form-modal"
           footer={null}
           width="70%"
-          zIndex={2001}
+          // zIndex={2001}
         >
           <ImageDetails onCancel={closeLightbox} currentImage={currentImage} />
         </Modal>

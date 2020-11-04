@@ -51,6 +51,7 @@ export default function ImageContent({ data, onCancel }) {
       <span>
         <Row
           style={{
+            width: '100%',
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",

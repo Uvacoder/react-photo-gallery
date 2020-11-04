@@ -14,8 +14,8 @@
 }
 
 .edit-new-customer-form-modal .ant-modal-body {
-  max-height: 650px;
-  min-height: 650px;
+  /* max-height: 650px;
+  min-height: 650px; */
   overflow-y: auto;
   overflow-y: overlay;
 }
