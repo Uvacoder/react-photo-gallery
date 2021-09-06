@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
-import logo from "./logo.svg";
-import PropTypes from "prop-types";
+// import logo from "./logo.svg";
+// import PropTypes from "prop-types";
 // import Gallery from 'react-grid-gallery';
 import Gallery from "react-photo-gallery";
 import { Modal } from "antd";
