@@ -18,7 +18,7 @@ export default function ImageContent({ data, onCancel }) {
 //  }, [data.tags]);
 
   const addTag = (tag) => {
-    setTags(tag);
+   // setTags(tag);
     useEffect(() => {
       setTags(data.tags);
       setNotes(data.notes);
