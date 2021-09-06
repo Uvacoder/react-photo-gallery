@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Button, Input, Divider, Switch, Select } from "antd";
+import { Row, Col, Button, Input, Switch, Select } from "antd";
 import { PushpinOutlined, StarOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
