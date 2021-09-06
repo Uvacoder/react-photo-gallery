@@ -84,7 +84,7 @@ class ImageSlider extends React.Component {
             // console.log('item index: ', index);
             return (
               <div key={index}>
-                <img src={this.state.imagesData[index].src} />
+                <img src={this.state.imagesData[index].src} alt=""/>
               </div>
             );
           })}
