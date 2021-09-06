@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import ImageSlider from "./ImageSlider";
 import ImageContent from "./ImageContent";
 
