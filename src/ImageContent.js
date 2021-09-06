@@ -12,16 +12,18 @@ export default function ImageContent({ data, onCancel }) {
   const [isStar, setIsStar] = React.useState(false);
   const [customerPortal, setCustomerPortal] = useState(false);
 
-  useEffect(() => {
-    setTags([]);
-    setNotes("");
-  }, [data.tags]);
+ // useEffect(() => {
+ //   setTags([]);
+ //   setNotes("");
+//  }, [data.tags]);
 
-  useEffect(() => {
-    setTags(data.tags);
-    setNotes(data.notes);
-  }, [data.tags]);
-
+  const addTag = (tag) => {
+    setTags(tag);
+    useEffect(() => {
+      setTags(data.tags);
+      setNotes(data.notes);
+    }, [data.tags]);
+};
   const imageMetaData = () => {
     console.log("Image Meta Data", data);
     console.log("tags: ", tags);
