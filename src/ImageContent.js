@@ -43,9 +43,9 @@ export default function ImageContent({ data, onCancel }) {
     setIsStar(true);
   };
 
-  const addTag = (tag) => {
-    setTags(tag);
-  };
+ // const addTag = (tag) => {
+ //    setTags(tag);
+ //  };
 
   // console.log('tagssss: ', tags)
   return (
